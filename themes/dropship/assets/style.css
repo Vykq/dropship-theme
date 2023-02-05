@@ -1,0 +1,167 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  body.modal-is-open,
+  body *.modal-is-open {
+    overflow-y: hidden; }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  scroll-behavior: smooth; }
+  @media (max-width: 1420px) {
+    html {
+      font-size: 18px; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 16px; } }
+  @media (max-width: 1000px) {
+    html {
+      font-size: 15px; } }
+  @media (max-width: 750px) {
+    html {
+      font-size: 14px; } }
+
+input {
+  appearance: none;
+  font-family: 'Montserrat', sans-serif; }
+
+button {
+  font-family: 'Montserrat', sans-serif; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000; }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000; }
+
+p {
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+  p:hover {
+    transition: .2s ease-in; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  transition: .2s all ease-in; }
+  a:hover {
+    transition: .2s all ease-in;
+    color: #005CE9; }
+  a.btn-primary-blue {
+    background-color: #005CE9;
+    padding: 1rem 1.75rem;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in; }
+    a.btn-primary-blue:hover {
+      border-radius: 25px; }
+  a.btn-primary-blue-header {
+    background-color: #005CE9;
+    padding: .7rem 2.5rem;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in; }
+    a.btn-primary-blue-header:hover {
+      border-radius: 25px; }
+  a.btn-secondary {
+    background-color: #F6F8FA;
+    padding: 1rem 2rem;
+    color: #005CE9;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in;
+    border: 1px solid transparent; }
+    a.btn-secondary:hover {
+      border-radius: 25px;
+      border: 1px solid #005CE9; }
+
+ul {
+  list-style-type: none; }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-display: swap;
+  src: url(cecea2fa024fb098488607d5cc87e52e.woff) format("woff"), url(15d96c0b813b7c5323b2ec36d87fc5ab.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  font-display: swap;
+  src: url(78bc42c0bd2d3c1606b4579fe6b2cc83.woff) format("woff"), url(20b003234dad933324ea899d1aabd22f.woff2) format("woff2");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-display: swap;
+  src: url(b4fde34707c4ba3d0a75e7f93cee38fe.woff) format("woff"), url(23f80a866506598cd6d4f0e637ffb5ac.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-display: swap;
+  src: url(4c9f31a2f887baf92d89fb202dc49674.woff) format("woff"), url(e6e0b3911eadfe5cf2d6f691518096c9.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-display: swap;
+  src: url(2f7b9cd69a9121fba66d09c1d50a8045.woff) format("woff"), url(c567dab977b0bf0594f98f43731128d4.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-display: swap;
+  src: url(29338c2c9c6dfd340002b883e48c4b7d.woff) format("woff"), url(b9d4507772c2828afb29e1ab24462c2c.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  font-display: swap;
+  src: url(fa46885a2496f14e120c76f08c23a046.woff) format("woff"), url(c047a31447aa7a62c2e9f639a7387620.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+

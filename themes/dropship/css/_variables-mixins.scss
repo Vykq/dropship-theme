@@ -1,0 +1,113 @@
+$pri: #005CE9;
+$sec: #F6F8FA;
+
+$px15 : .7rem;
+$px16: .8rem;
+$px17: .85rem;
+$px18: .9rem;
+$px19: .95rem;
+$px20 : 1rem;
+$px22: 1.1rem;
+$px23: 1.15rem;
+$px25: 1.2rem;
+$px28: 1.4rem;
+$px30 : 1.5rem;
+$px35 : 1.75rem;
+$px40: 2rem;
+$px60 : 3rem;
+$px70 : 3.5rem;
+
+
+//for Header
+@mixin fullStructure() {
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        width: 95%;
+    }
+    @media (max-width: 1024px) {
+        width: 93%;
+    }
+    @media (max-width: 768px) {
+        width: 98%;
+    }
+}
+
+
+//for Content
+@mixin normalStructure() {
+    width: 80%;
+    margin: 0 auto;
+    @media (min-width: 2000px) {
+        width: 1600px;
+    }
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+    @media (max-width: 1024px) {
+        width: 85%;
+    }
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+    @media (max-width: 480px) {
+        width: 95%;
+    }
+}
+
+@mixin heroStructure() {
+    width: 75%;
+    margin: 0 auto;
+    @media (min-width: 2000px) {
+        width: 1500px;
+    }
+    @media (max-width: 1200px) {
+        width: 72%;
+    }
+    @media (max-width: 1024px) {
+        width: 77%;
+    }
+    @media (max-width: 768px) {
+        width: 85%;
+    }
+    @media (max-width: 480px) {
+        width: 92%;
+    }
+}
+
+
+//for Footer
+@mixin smallStructure() {
+    width: 70%;
+    margin: 0 auto;
+    @media (min-width: 2000px) {
+        width: 1500px;
+    }
+    @media (max-width: 1200px) {
+        width: 72%;
+    }
+    @media (max-width: 1024px) {
+        width: 77%;
+    }
+    @media (max-width: 768px) {
+        width: 85%;
+    }
+    @media (max-width: 480px) {
+        width: 92%;
+    }
+}
+
+@mixin centerAbsolute() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin imageCover($vertical, $horizontal) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: $vertical $horizontal;
+    transform: none;
+}

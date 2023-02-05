@@ -1,0 +1,140 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &.modal-is-open {
+    overflow-y: hidden;
+  }
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  @media (max-width: 1420px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+  @media (max-width: 750px) {
+    font-size: 14px;
+  }
+}
+
+input {
+  appearance: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: $px18;
+  font-weight: 700;
+  color: #000;
+}
+
+p {
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: $px30;
+  &:hover {
+    transition: .2s ease-in;
+  }
+}
+
+a {
+  text-decoration: none;
+  display:inline-block;
+  color:#000000;
+  transition: .2s all ease-in;
+  &:hover {
+    transition: .2s all ease-in;
+    color:$pri;
+  }
+  &.btn-primary-blue {
+    background-color: $pri;
+    padding: 1rem 1.75rem;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: $px17;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in;
+    &:hover {
+      border-radius: 25px;
+    }
+  }
+  &.btn-primary-blue-header {
+    background-color: $pri;
+    padding: .7rem 2.5rem;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: $px17;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in;
+    &:hover {
+      border-radius: 25px;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $sec;
+    padding: 1rem 2rem;
+    color: $pri;
+    line-height: $px30;
+    font-size: $px17;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s all ease-in;
+    border:1px solid transparent;
+    &:hover {
+      border-radius: 25px;
+      border:1px solid $pri;
+    }
+
+  }
+
+}
+
+ul {
+  list-style-type: none;
+}
