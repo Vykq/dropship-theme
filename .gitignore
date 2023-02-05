@@ -1,0 +1,48 @@
+/themes/twenty*/
+/uploads/*
+
+# ignore everything in the root except the "wp-content" directory.
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp-content/*
+!/mu-plugins/
+!/plugins/
+!/themes/
+
+# ignore these plugins
+/plugins/hello.php
+
+# ignore specific themes
+/themes/twenty*/
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+.*
+~*
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.idea
+!.gitignore
+
