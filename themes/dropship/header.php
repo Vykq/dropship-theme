@@ -18,22 +18,30 @@
 </head>
 <body>
 <header>
-<div class="logo-col">
+    <?php
+    $pcolor = get_field('primary_color','theme-settings');
+    $scolor = get_field('secondary_color','theme-settings');
+    ?>
+    <div class="topbar" style="background-color:<?php echo $pcolor; ?>">
+        <p style="color:<?php echo the_field('top_bar_text_color','header-settings'); ?>"><?php echo the_field('top_bar','header-settings');?></p>
+    </div>
+    <div class="header">
+        <div class="logo-col">
             <a href="<?php echo get_home_url(); ?>"><img id="site-logo" src="<?php the_field('logo_image', 'header-settings'); ?>"></a>
         </div>
         <div class="menu-col">
-        <?php
-				$defaults = array(
-					'theme_location'  => 'header-menu',
-					'container'       => '',
-					'items_wrap'      => '<nav>%3$s</nav>'
-				);
-				wp_nav_menu( $defaults );
-				?>
+            <?php
+                    $defaults = array(
+                        'theme_location'  => 'header-menu',
+                        'container'       => '',
+                        'items_wrap'      => '<nav>%3$s</nav>'
+                    );
+                    wp_nav_menu( $defaults );
+                    ?>
         </div>
         <div class="cart-col">
-        <img id="cart" src="<?php the_field('cart_icon', 'header-settings'); ?>">
+            <img id="cart" src="<?php the_field('cart_icon', 'header-settings'); ?>">
         </div>
-
+        </div>
 </header>
 <main>

@@ -1,0 +1,50 @@
+.topbar{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: $px17;
+        padding:.3rem 0;
+        font-weight: 400;
+    }
+    
+}
+
+header{
+    box-shadow: 0px 4px 7px #0000001c;
+    .header{
+    @include normalStructure();
+    display:grid;
+    grid-template-columns: max-content 1fr 100px;
+    align-items: center;
+    gap:1rem;
+    padding:.7rem 0;
+    .logo-col {
+        img {
+            width:250px;
+        }
+    }
+    .menu-col{
+        nav {
+            display:flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-evenly;
+            li {
+                a {
+                    font-size: $px17;
+                    font-weight: 500;
+                }
+               
+            }
+        }
+    }
+    .cart-col {
+        img {
+            width:24px;
+            cursor: pointer;
+        }
+    }
+}
+}

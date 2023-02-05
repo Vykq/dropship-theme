@@ -99,5 +99,24 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'		=> false
     ));
 
+    $parent = acf_add_options_page(array(
+        'page_title' 	=> 'Theme settings',
+        'menu_title'	=> 'Theme settings',
+        'menu_slug' 	=> 'theme-settings',
+        'capability'	=> 'edit_posts',
+        'post_id'       =>  'theme-settings',
+        'redirect'		=> false
+    ));
+
+    $parent = acf_add_options_page(array(
+        'page_title' 	=> 'Footer settings',
+        'menu_title'	=> 'Footer settings',
+        'menu_slug' 	=> 'footer-settings',
+        'capability'	=> 'edit_posts',
+        'post_id'       =>  'footer-settings',
+        'redirect'		=> false
+    ));
+
+
 }
 
