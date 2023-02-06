@@ -1,0 +1,25 @@
+.three-columns-block {
+    margin:5rem 0;
+    .container {
+        @include normalStructure();
+        .three-columns-wrapper {
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:1.5rem;
+            .column {
+                img {
+                    width:100%;
+                    margin-bottom:.5rem;
+                }
+                .title {
+                    font-weight: 700;
+                    font-size: $px30;
+                    margin-bottom:1rem;
+                }
+                p {
+                    font-size: $px18;
+                }
+            }
+        }
+    }
+}

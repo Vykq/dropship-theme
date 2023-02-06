@@ -1,0 +1,82 @@
+.faq-block{
+    margin:5rem 0;
+    .container{
+        @include normalStructure();
+        .text-container{
+            margin-bottom:3rem;
+            .title {
+                font-size: $px35;
+                font-weight: 700;
+                margin-bottom:1rem;
+            }
+            p {
+                font-size: $px18;
+
+            }
+        }
+        .faqs {
+            button{
+                width:100%;
+                display:flex;
+                outline:none;
+                border:none;
+                position: relative;
+                padding:.5rem 0;
+                background-color: transparent;
+                transition:.2s all;
+                margin-bottom:1rem;
+                border-bottom:1px solid #d4d4d4;
+                p{
+                    font-size: $px22;
+                    font-weight: 600;
+                    transition:.2s all;
+                }
+                
+                svg {
+                    position:absolute;
+                    top:50%;
+                    right:5%;
+                    transform: translate(-50%, -50%);
+                    transition: .2s all ease-in-out;
+                    transform-origin: 100% 0%;
+                }
+                &.active {
+                    border-bottom:none;
+                    margin-bottom:.5rem;
+                    p {
+                        transform:translateX(1rem);
+                    }
+                    svg {
+                        transform:rotate(45deg);
+                        line {
+                            stroke: $pri;
+                        }
+                    }
+                }
+            }
+            .faqpanel {
+                display:none;
+                animation: slide .2s ease-in;
+                margin-bottom:1rem;
+                border-bottom:1px solid #d4d4d4;
+                padding-bottom: 1rem;
+                &.active{
+                    display:block;
+                    animation: slide .2s ease-in;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity : 1;
+    }
+    
+}

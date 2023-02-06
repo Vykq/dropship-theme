@@ -86,9 +86,9 @@ a {
     transition: .2s all ease-in;
     color:$pri;
   }
-  &.btn-primary-blue {
+  &.btn-primary {
     background-color: $pri;
-    padding: 1rem 1.75rem;
+    padding: 1rem 3rem;
     color: #fff;
     line-height: 1.5rem;
     font-size: $px17;
@@ -100,20 +100,7 @@ a {
       border-radius: 25px;
     }
   }
-  &.btn-primary-blue-header {
-    background-color: $pri;
-    padding: .7rem 2.5rem;
-    color: #fff;
-    line-height: 1.5rem;
-    font-size: $px17;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .2s all ease-in;
-    &:hover {
-      border-radius: 25px;
-    }
-  }
+
 
   &.btn-secondary {
     background-color: $sec;

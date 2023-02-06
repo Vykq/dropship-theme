@@ -1,0 +1,64 @@
+.slider {
+    .splide {
+        .splide__track {
+            ul.splide__list {
+                li {
+                    position: relative;
+                    background-size: cover;
+                    height: 100vh;
+                    &.left-align {
+                        .slider-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            position: absolute;
+                            top: 50%;
+                            left: 5%;
+                            transform: translate(0%, -50%);
+                        }
+                    }
+                    &.center-align {
+                        .slider-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    &.right-align {
+                        .slider-content {
+                            display: flex;
+                            align-items: self-end;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 50%;
+                            right:5%;
+                            transform: translate(0%, -50%);
+                        }
+                    }
+
+                    .slider-content {
+                        .hero-title {
+                            font-size: $px60;
+                            font-weight: 700;
+                            line-height: $px70;
+                            margin-bottom:.5rem
+                        }
+                        .hero-subtitle {
+                            font-size: $px30;
+                            font-weight: 500;
+                            line-height: 2rem;
+                            margin-bottom:1rem;
+                        }
+                        .hero-button {
+                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.image-text-block {
+    margin:5rem 0;
+    .container {
+        @include normalStructure();
+        .image-text-wrapper {
+            display:flex;
+            gap:2rem;
+            align-items: center;
+            &.img-right {
+                flex-direction: row-reverse;
+            }
+            .column {
+                width:50%;
+                img {
+                    width:100%;
+                }
+                .pretitle {
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    font-size: $px22;
+                    margin-bottom:.7rem;
+                }
+                .title {
+                    font-size: $px35;
+                    font-weight: 700;
+                    margin-bottom:1rem;
+                }
+                p {
+                    font-size: $px18;
+                    font-weight: 400;
+                }
+                a {
+                    margin-top:1rem;
+                }
+            }
+        }
+    }
+}

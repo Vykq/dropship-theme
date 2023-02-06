@@ -7,7 +7,11 @@ require_once('lib/blocks.php');
 */
 function webpack_files() {
     wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), array(), '1.0.1', true);
+    wp_enqueue_script('splide-js', get_theme_file_uri('js/splide.min.js'), array(), '4.1.4', true);
+    wp_enqueue_script('beerslider-js', get_theme_file_uri('js/BeerSlider.js'), array(), '1', true);
     wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), '1.0.1');
+    wp_enqueue_style('splide-css', get_theme_file_uri('css/splide.min.css'), array(), '4.1.4');
+    wp_enqueue_style('beerslider-css', get_theme_file_uri('css/beerslider.css'), array(), '1');
     wp_localize_script( 'webpack-js', 'themeUrl',
         array(
             'themeUrl' => get_theme_file_uri()
@@ -53,3 +57,27 @@ add_action( 'init', 'custom_new_menu' );
 
 
 
+function theme_post_types() {
+
+  register_post_type('faq', array(
+    'rewrite' => array('slug' => _x( 'FAQ', 'slug' )),
+    'has_archive' => false,
+    'public' => true,
+    'labels' => array(
+        'name' => 'Frequenty asked questions',
+        'add_new_item' => 'Add question & answer',
+        'edit_item' => 'Edit question & answer',
+        'all_items' => 'All question & answer',
+        'singular_name' => 'FAQ'
+    ),
+    'supports' => array (
+        'title',
+        'page-attributes',
+
+    ),
+    'menu_icon' => 'dashicons-format-chat'
+  ));
+
+}
+
+add_action('init', 'theme_post_types');

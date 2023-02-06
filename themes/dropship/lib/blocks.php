@@ -6,8 +6,14 @@
 global $blocks;
 
 $blocks = array(
-    'main-hero' => 'Main Hero',
+    'slider-block' => 'Slider',
+    'image-text-block' => 'Image Text Block',
+    'before-after-block' => 'Before and After Block',
+    'three-columns-block' => 'Three columns Block',
+    'faq-block' => 'FAQ block',
 );
+
+
 add_action('acf/init', 'theme_acf_blocks_init');
 function theme_acf_blocks_init() {
 
