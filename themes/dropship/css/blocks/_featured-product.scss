@@ -38,6 +38,31 @@
                     transition: .2s all ease-in;
                 }
             }
+            .right {
+                .title-wrapper{
+                    .title {
+                        font-size: $px40;
+                        font-weight: 700;
+                        line-height: 2.5rem;
+                    }
+                    .price {
+                        .salesprice {
+                            font-size: $px30;
+                            line-height: 2rem;
+                            font-weight: 500;
+                            color:$pri;
+                            display: inline;
+                        }
+                        .regularprice {
+                            display: inline;
+                            font-size: $px20;
+                            line-height: 1.5rem;
+                            font-weight: 400;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
         }
     }
 }

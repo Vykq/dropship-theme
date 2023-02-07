@@ -51,11 +51,11 @@ if( $id ):
                     <div class="price">
                         <?php
                             if($saleprice) { ?>
-                                <p class="saleprice"><?php echo $saleprice; ?></p><span class="regularprice"><?php echo $regprice;?></span>
+                                <p class="salesprice"><?php echo $saleprice . get_woocommerce_currency_symbol(); ?></p><p class="regularprice"><?php echo $regprice . get_woocommerce_currency_symbol();?></p>
                             <?php
                             } else {
                                 ?>
-                                <p class="salesprice"><?php echo $regprice; ?></p> <?php
+                                <p class="salesprice"><?php echo $regprice . get_woocommerce_currency_symbol(); ?></p> <?php
                             }
                         ?>
                     </div>      

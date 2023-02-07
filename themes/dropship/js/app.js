@@ -1,6 +1,7 @@
 import Splide from './splide.min.js';
 import BeerSlider from './BeerSlider.js';
 import Accordion from './modules/accordion.js';
+import quantityBtns from './modules/quantitybtns';
 
 if (document.querySelector('section.slider')) {
     new Splide( '.splide' ).mount();
@@ -50,6 +51,10 @@ if (document.querySelector('section.before-after-block')) {
     } );
     
     splide.mount();
+}
+
+if (document.querySelector('input[type="number"]')) {
+  quantityBtns();
 }
 
 
