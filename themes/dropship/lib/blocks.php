@@ -11,6 +11,7 @@ $blocks = array(
     'before-after-block' => 'Before and After Block',
     'three-columns-block' => 'Three columns Block',
     'faq-block' => 'FAQ block',
+    'featured-product-block'=> 'Featured Product',
 );
 
 

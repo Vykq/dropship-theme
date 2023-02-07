@@ -20,7 +20,7 @@ $px70 : 3.5rem;
 
 //for Header
 @mixin fullStructure() {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     @media (max-width: 1200px) {
         width: 95%;

@@ -1,0 +1,44 @@
+.featured-product-block {
+    .container {
+        @include fullStructure();
+        .wrapper {
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:3rem; 
+            .left {
+                display:flex;
+                flex-direction: row-reverse;
+                #featured-product-gallery {
+                    width:80%;
+                }
+                .thumbnails {
+                    display: flex;
+                    flex-direction: column;
+                    width:20%;
+                    .thumbnail {
+                        width: 80%;
+                        height: auto;
+                        overflow: hidden;
+                        list-style: none;
+                        margin: 0 0.2rem;
+                        cursor: pointer;
+                        &.is-active {
+                            border:2px solid $pri;
+                        }
+                        &:hover{
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                      }
+                  }
+                img {
+                    width:100%;
+                    height: auto;
+                    transition: .2s all ease-in;
+                }
+            }
+        }
+    }
+}
+
