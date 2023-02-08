@@ -4,7 +4,13 @@ import Accordion from './modules/accordion.js';
 import quantityBtns from './modules/quantitybtns';
 
 if (document.querySelector('section.slider')) {
-    new Splide( '.splide' ).mount();
+    
+
+    const slider = document.querySelector('section.slider');
+
+      if(!slider.classList.contains('no-slide')) {
+        new Splide( '.splide' ).mount();
+      }
  }
 
 

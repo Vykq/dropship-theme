@@ -1,0 +1,72 @@
+.reviews-block {
+    margin:5rem 0;
+    .container {
+        @include normalStructure();
+        .title {
+            font-size: $px30;
+            line-height: $px40;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            &.center {
+                text-align: center;
+            }
+        }
+        .subtitle {
+            font-size: $px20;
+            line-height: $px30;
+            &.center {
+                text-align: center;
+            }
+        }
+        .reviews{
+            margin-top:2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:1rem;
+            li {
+                list-style-type: none;
+                border:1px solid $sec;
+                .comment_container{
+                    .review-image {
+                        border-bottom:1px solid $sec;
+                        width:100%;
+                        &.no-image {
+                            opacity:.2;
+                        }
+                    }
+                    .review-text {
+                        padding:.5rem;
+                        .meta{
+                            margin-bottom:.5rem;
+                            .woocommerce-review__author{
+                            font-size: $px18;
+                            display: block;
+                            }
+                            .woocommerce-review__dash{
+                                color:$txt;
+                            }
+                            .woocommerce-review__published-date{
+                                color:$txt;
+                                font-size: $px18;
+                            }
+                        }
+                        .star-rating {
+
+                        }
+                        .description {
+                            margin:.5rem 0 ;
+                            p {
+                                color: $txt;
+                                line-height: $px25;
+                                font-size: $px18;
+                            }
+                        }
+                    }
+                }
+               
+            }
+
+        }
+       
+    }
+}

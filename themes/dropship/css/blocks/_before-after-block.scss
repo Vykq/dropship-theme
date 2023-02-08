@@ -1,4 +1,5 @@
 .before-after-block {
+    margin:5rem 0;
     .container {
         @include normalStructure();
         .before-after-wrapper{

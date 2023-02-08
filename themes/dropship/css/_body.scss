@@ -88,7 +88,7 @@ a {
   }
   &.btn-primary {
     background-color: $pri;
-    padding: 1rem 3rem;
+    padding: .5rem 2rem;
     color: #fff;
     line-height: 1.5rem;
     font-size: $px17;
@@ -96,8 +96,10 @@ a {
     cursor: pointer;
     border-radius: 5px;
     transition: .2s all ease-in;
+    opacity: 1;
     &:hover {
       border-radius: 25px;
+      opacity: .8;
     }
   }
 

@@ -1,4 +1,5 @@
 .slider {
+    margin-bottom:5rem;
     .splide {
         .splide__track {
             ul.splide__list {
@@ -54,10 +55,19 @@
                             margin-bottom:1rem;
                         }
                         .hero-button {
-                    
+                            
                         }
                     }
                 }
+            }
+        }
+    }
+    &.no-slide {
+        .splide {
+            visibility: visible;
+            li {
+                height: 100vh;
+                width: 100%;
             }
         }
     }

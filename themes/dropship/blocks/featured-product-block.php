@@ -61,6 +61,7 @@ if( $id ):
                     </div>      
                 </div>
                 <div class="add-to-cart-wrapper">
+                    <p>Kiekis</p>
                     <?php
                     setup_postdata( $id );
                     wc_get_template( 'single-product/add-to-cart/simple.php' );
@@ -78,7 +79,9 @@ if( $id ):
                                </div>
                                <div class="right">
                                 <p class="title"><?php echo the_sub_field('title'); ?></p>
-                                <?php echo the_sub_field('content'); ?>
+                                <div class="content">
+                                    <?php echo the_sub_field('content'); ?>
+                                </div>
                                </div>
                             </div>
                         <?php endwhile;

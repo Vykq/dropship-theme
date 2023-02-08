@@ -12,6 +12,9 @@ $blocks = array(
     'three-columns-block' => 'Three columns Block',
     'faq-block' => 'FAQ block',
     'featured-product-block'=> 'Featured Product',
+    'reviews-block' => 'Reviews',
+    'heading-block' => 'Simple Heading',
+    'two-columns-block' => 'Two columns block',
 );
 
 

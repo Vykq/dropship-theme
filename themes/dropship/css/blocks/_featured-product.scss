@@ -1,4 +1,5 @@
 .featured-product-block {
+    margin:5rem 0;
     .container {
         @include fullStructure();
         .wrapper {
@@ -6,6 +7,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap:3rem; 
             .left {
+                height: max-content;
                 display:flex;
                 flex-direction: row-reverse;
                 #featured-product-gallery {
@@ -44,8 +46,10 @@
                         font-size: $px40;
                         font-weight: 700;
                         line-height: 2.5rem;
+                        margin-bottom:.5rem;
                     }
                     .price {
+                        margin-bottom:1rem;
                         .salesprice {
                             font-size: $px30;
                             line-height: 2rem;
@@ -54,11 +58,58 @@
                             display: inline;
                         }
                         .regularprice {
+                            margin-left:.5rem;
                             display: inline;
                             font-size: $px20;
                             line-height: 1.5rem;
                             font-weight: 400;
                             text-decoration: line-through;
+                        }
+                    }
+                }
+                .add-to-cart-wrapper {
+                    border-top:1px solid $sec;
+                    padding:2rem 0;
+                    p {
+                        font-size: $px15;
+                        line-height: $px16;
+                        color:#000;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom:.5rem;
+                    }
+                }
+                .usps {
+                    display:flex;
+                    flex-direction: column;
+                    gap:1rem;
+                    .usp {
+                        display:flex;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        gap: 1.5rem;
+                        .left {
+                            width: 20%;
+                            img {
+                                width:100%;
+                            }
+                        }
+                        .right {
+                            width: 75%;
+                            .title {
+                                font-size: $px25;
+                                line-height: $px30;
+                                font-weight: 700;
+                            }
+                            .content {
+                                p {
+                                    font-size: $px18;
+                                    line-height: $px25;
+                                    color:#969696;
+                                    
+                                }
+                            }
                         }
                     }
                 }

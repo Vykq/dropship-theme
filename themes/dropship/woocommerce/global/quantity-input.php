@@ -37,9 +37,10 @@ if ( $max_value && $min_value === $max_value ) {
 	 */
 	do_action( 'woocommerce_before_quantity_input_field' );
 	?>
+	<div class="quantity-btns">
 	<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
 	<span class="minus">-</span>
-	<input
+	<input readonly
 		type="<?php echo $is_readonly ? 'text' : 'number'; ?>"
 		<?php wp_readonly( $is_readonly ); ?>
 		id="<?php echo esc_attr( $input_id ); ?>"
@@ -58,6 +59,7 @@ if ( $max_value && $min_value === $max_value ) {
 		<?php endif; ?>
 	/>
 	<span class="plus">+</span>
+	</div>
 	<?php
 	/**
 	 * Hook to output something after quantity input field

@@ -9,16 +9,19 @@
     }
   }
   
+  @import "fonts";
   @import "variables-mixins";
   @import "body";
-  @import "fonts";
   @import "header";
   @import "footer";
+  @import "woocommerce/add-to-cart";
+  @import "woocommerce/quantity";
   @import "blocks/slider-block";
   @import "blocks/image-text-block";
   @import "blocks/before-after-block";
   @import "blocks/three-columns-block";
   @import "blocks/faq-block";
   @import "blocks/featured-product";
-
+  @import "blocks/reviews-block";
+  @import "blocks/heading-block";
   

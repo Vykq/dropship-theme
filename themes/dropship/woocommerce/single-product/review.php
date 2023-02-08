@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 ?>
+
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 
 	<div id="comment-<?php comment_ID(); ?>" class="comment_container">
@@ -31,17 +32,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 *
 		 * @hooked woocommerce_review_display_gravatar - 10
 		 */
-		do_action( 'woocommerce_review_before', $comment );
+		//do_action( 'woocommerce_review_before', $comment );
 		?>
 
 		<div class="comment-text">
-
-			<?php
+			<?php $image = get_field('image', $comment); 
+			if($image){
+				?> <img src="<?php echo $image; ?>" class="review-image"> <?php
+			} else {
+				?> <img src="<?php echo get_template_directory_uri() . '/assets/images/no-image.png'; ?>" class="review-image no-image"> <?php
+			}
 			/**
 			 * The woocommerce_review_before_comment_meta hook.
 			 *
 			 * @hooked woocommerce_review_display_rating - 10
 			 */
+			echo '<div class="review-text">';
+			do_action( 'woocommerce_review_meta', $comment );
 			do_action( 'woocommerce_review_before_comment_meta', $comment );
 
 			/**
@@ -49,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 *
 			 * @hooked woocommerce_review_display_meta - 10
 			 */
-			do_action( 'woocommerce_review_meta', $comment );
+			
 
 			do_action( 'woocommerce_review_before_comment_text', $comment );
 
@@ -60,7 +67,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 */
 			do_action( 'woocommerce_review_comment_text', $comment );
 
-			do_action( 'woocommerce_review_after_comment_text', $comment );
+			 do_action( 'woocommerce_review_after_comment_text', $comment );
+			 echo '</div>';
 			?>
 
 		</div>
