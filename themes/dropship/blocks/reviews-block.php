@@ -9,7 +9,7 @@ if( $id ): ?>
 <section class="reviews-block">
     <div class="container">
         <p class="title <?php echo $class; ?>"><?php echo the_field('title'); ?></p>
-        <p class="subtitle <?php echo $class; ?>"><?php echo the_field('subtitle'); ?></p>
+        <p class="subtitle <?php echo $class; ?> "><?php echo the_field('subtitle'); ?></p>
         <div class="reviews">
             <?php
             $product = wc_get_product($id);
