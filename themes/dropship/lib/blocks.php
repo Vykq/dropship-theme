@@ -15,6 +15,7 @@ $blocks = array(
     'reviews-block' => 'Reviews',
     'heading-block' => 'Simple Heading',
     'two-columns-block' => 'Two columns block',
+    'contact-form-block' => 'Contact form',
 );
 
 

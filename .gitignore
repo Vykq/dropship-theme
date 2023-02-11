@@ -2,6 +2,8 @@
 /uploads/*
 /themes/dropship/assets/*.woff
 /themes/dropship/assets/*.woff2
+/plugins/duplicator
+/backups-dup-lite
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
 

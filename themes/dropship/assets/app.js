@@ -105,7 +105,7 @@ eval("!function(t,e){ true?module.exports=e():undefined}(window,function(){retur
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _splide_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./splide.min.js */ \"./js/splide.min.js\");\n/* harmony import */ var _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_splide_min_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BeerSlider.js */ \"./js/BeerSlider.js\");\n/* harmony import */ var _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_BeerSlider_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/accordion.js */ \"./js/modules/accordion.js\");\n/* harmony import */ var _modules_quantitybtns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/quantitybtns */ \"./js/modules/quantitybtns.js\");\n\r\n\r\n\r\n\r\n\r\nif (document.querySelector('section.slider')) {\r\n    \r\n\r\n    const slider = document.querySelector('section.slider');\r\n\r\n      if(!slider.classList.contains('no-slide')) {\r\n        new _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default.a( '.splide' ).mount();\r\n      }\r\n }\r\n\r\n\r\n \r\nif (document.querySelector('section.before-after-block')) {\r\n    new _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1___default.a(document.getElementById('before-after') );\r\n }\r\n\r\n if (document.querySelector('.faqaccordion')) {\r\n    Object(_modules_accordion_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n }\r\n \r\n\r\n if (document.querySelector('.featured-product-block')) {\r\n   const splide = new _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default.a( '#featured-product-gallery', {\r\n      pagination: false,\r\n      width: '100%',\r\n    } );\r\n    \r\n    const thumbnails = document.getElementsByClassName( 'thumbnail' );\r\n    let current;\r\n    \r\n    for ( let i = 0; i < thumbnails.length; i++ ) {\r\n      initThumbnail( thumbnails[ i ], i );\r\n    }\r\n    \r\n    function initThumbnail( thumbnail, index ) {\r\n      thumbnail.addEventListener( 'click', function () {\r\n        splide.go( index );\r\n      } );\r\n    }\r\n    \r\n    splide.on( 'mounted move', function () {\r\n      const thumbnail = thumbnails[ splide.index ];\r\n    \r\n      if ( thumbnail ) {\r\n        if ( current ) {\r\n          current.classList.remove( 'is-active' );\r\n        }\r\n    \r\n        thumbnail.classList.add( 'is-active' );\r\n        current = thumbnail;\r\n      }\r\n    } );\r\n    \r\n    splide.mount();\r\n}\r\n\r\nif (document.querySelector('input[type=\"number\"]')) {\r\n  Object(_modules_quantitybtns__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n}\r\n\r\n\r\n\r\n \r\n \n\n//# sourceURL=webpack:///./js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _splide_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./splide.min.js */ \"./js/splide.min.js\");\n/* harmony import */ var _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_splide_min_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BeerSlider.js */ \"./js/BeerSlider.js\");\n/* harmony import */ var _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_BeerSlider_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/accordion.js */ \"./js/modules/accordion.js\");\n/* harmony import */ var _modules_quantitybtns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/quantitybtns */ \"./js/modules/quantitybtns.js\");\n/* harmony import */ var _modules_send_contact_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/send-contact-form */ \"./js/modules/send-contact-form.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nif (document.querySelector('section.slider')) {\r\n    \r\n\r\n    const slider = document.querySelector('section.slider');\r\n\r\n      if(!slider.classList.contains('no-slide')) {\r\n        new _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default.a( '.splide' ).mount();\r\n      }\r\n }\r\n\r\n\r\n \r\nif (document.querySelector('section.before-after-block')) {\r\n    new _BeerSlider_js__WEBPACK_IMPORTED_MODULE_1___default.a(document.getElementById('before-after') );\r\n }\r\n\r\n if (document.querySelector('.faqaccordion')) {\r\n    Object(_modules_accordion_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n }\r\n \r\n\r\n if (document.querySelector('.featured-product-block')) {\r\n   const splide = new _splide_min_js__WEBPACK_IMPORTED_MODULE_0___default.a( '#featured-product-gallery', {\r\n      pagination: false,\r\n      width: '100%',\r\n    } );\r\n    \r\n    const thumbnails = document.getElementsByClassName( 'thumbnail' );\r\n    let current;\r\n    \r\n    for ( let i = 0; i < thumbnails.length; i++ ) {\r\n      initThumbnail( thumbnails[ i ], i );\r\n    }\r\n    \r\n    function initThumbnail( thumbnail, index ) {\r\n      thumbnail.addEventListener( 'click', function () {\r\n        splide.go( index );\r\n      } );\r\n    }\r\n    \r\n    splide.on( 'mounted move', function () {\r\n      const thumbnail = thumbnails[ splide.index ];\r\n    \r\n      if ( thumbnail ) {\r\n        if ( current ) {\r\n          current.classList.remove( 'is-active' );\r\n        }\r\n    \r\n        thumbnail.classList.add( 'is-active' );\r\n        current = thumbnail;\r\n      }\r\n    } );\r\n    \r\n    splide.mount();\r\n}\r\n\r\nif (document.querySelector('input[type=\"number\"]')) {\r\n  Object(_modules_quantitybtns__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n}\r\n\r\nif (document.querySelector('.contact-form-block')) {\r\n  Object(_modules_send_contact_form__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n}\r\n\r\n\r\n \r\n \n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ }),
 
@@ -121,6 +121,66 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst Accordion = () => {\r\n
 
 /***/ }),
 
+/***/ "./js/modules/check-email.js":
+/*!***********************************!*\
+  !*** ./js/modules/check-email.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _validate_email__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate-email */ \"./js/modules/validate-email.js\");\n/* harmony import */ var _is_empty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./is-empty */ \"./js/modules/is-empty.js\");\n\r\n\r\n\r\nconst checkEmail = (mailInput, mailMsg) => {\r\n    if (mailInput.classList.contains('error')) {\r\n        return false;\r\n    }\r\n    if (Object(_is_empty__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(mailInput)) {\r\n        mailInput.classList.add('error');\r\n        mailMsg.textContent = themeUrl.mail_empty;\r\n        return false;\r\n    };\r\n    if (!Object(_validate_email__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(mailInput.value)) {\r\n        mailInput.classList.add('error');\r\n        mailMsg.textContent = themeUrl.mail_error;\r\n        return false;\r\n    }\r\n    return true;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (checkEmail);\r\n\r\n\n\n//# sourceURL=webpack:///./js/modules/check-email.js?");
+
+/***/ }),
+
+/***/ "./js/modules/check-name.js":
+/*!**********************************!*\
+  !*** ./js/modules/check-name.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _is_empty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-empty */ \"./js/modules/is-empty.js\");\n/* harmony import */ var _validate_text__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./validate-text */ \"./js/modules/validate-text.js\");\n\r\n\r\n\r\nconst checkName = (nameInput, nameMsg) => {\r\n    if (nameInput.classList.contains('error')) {\r\n        return false;\r\n    }\r\n    if (Object(_is_empty__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(nameInput)) {\r\n        nameInput.classList.add('error');\r\n        nameMsg.textContent = themeUrl.name_empty;\r\n        return false;\r\n    };\r\n    if (!Object(_validate_text__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(nameInput.value)) {\r\n        nameInput.classList.add('error');\r\n        nameMsg.textContent = themeUrl.name_error;\r\n        return false;\r\n    }\r\n    return true;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (checkName);\r\n\n\n//# sourceURL=webpack:///./js/modules/check-name.js?");
+
+/***/ }),
+
+/***/ "./js/modules/check-phone.js":
+/*!***********************************!*\
+  !*** ./js/modules/check-phone.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _is_empty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-empty */ \"./js/modules/is-empty.js\");\n/* harmony import */ var _validate_phone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./validate-phone */ \"./js/modules/validate-phone.js\");\n\r\n\r\n\r\nconst checkPhone = (phoneInput, phoneMsg) => {\r\n    if (phoneInput.classList.contains('error')) {\r\n        return false;\r\n    }\r\n    if (Object(_is_empty__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(phoneInput)) {\r\n        phoneInput.classList.add('error');\r\n        phoneMsg.textContent = themeUrl.phone_empty;\r\n        return false;\r\n    };\r\n    if (!Object(_validate_phone__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(phoneInput.value)) {\r\n        phoneInput.classList.add('error');\r\n        phoneMsg.textContent = themeUrl.phone_error;\r\n        return false;\r\n    }\r\n    return true\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (checkPhone);\r\n\n\n//# sourceURL=webpack:///./js/modules/check-phone.js?");
+
+/***/ }),
+
+/***/ "./js/modules/has-number.js":
+/*!**********************************!*\
+  !*** ./js/modules/has-number.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction hasNumber(string) {\r\n    return /\\d/.test(string);\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (hasNumber);\r\n\r\n\n\n//# sourceURL=webpack:///./js/modules/has-number.js?");
+
+/***/ }),
+
+/***/ "./js/modules/is-empty.js":
+/*!********************************!*\
+  !*** ./js/modules/is-empty.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction isEmpty(field) {\r\n    if (field.value.replace(/\\s+/g, '') == '') {\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (isEmpty);\r\n\r\n\n\n//# sourceURL=webpack:///./js/modules/is-empty.js?");
+
+/***/ }),
+
 /***/ "./js/modules/quantitybtns.js":
 /*!************************************!*\
   !*** ./js/modules/quantitybtns.js ***!
@@ -130,6 +190,54 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst Accordion = () => {\r\n
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\nconst quantityBtns = () => {\r\n    const plus = document.querySelector('.plus');\r\n    const minus = document.querySelector('.minus');\r\n    const numberfield = minus.nextElementSibling;\r\n \r\n    plus.addEventListener('click', () => {\r\n       numberfield.value++;\r\n    });\r\n \r\n    minus.addEventListener('click', () => {\r\n       if(numberfield.value > \"1\" ){\r\n          numberfield.value--;\r\n       }\r\n    });\r\n \r\n };\r\n \r\n /* harmony default export */ __webpack_exports__[\"default\"] = (quantityBtns);\r\n \n\n//# sourceURL=webpack:///./js/modules/quantitybtns.js?");
+
+/***/ }),
+
+/***/ "./js/modules/send-contact-form.js":
+/*!*****************************************!*\
+  !*** ./js/modules/send-contact-form.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _check_name__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./check-name */ \"./js/modules/check-name.js\");\n/* harmony import */ var _check_phone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./check-phone */ \"./js/modules/check-phone.js\");\n/* harmony import */ var _check_email__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./check-email */ \"./js/modules/check-email.js\");\n\r\n\r\n\r\n\r\nconst sendContactForm = () => {\r\n    const form = document.querySelector('form.contacts-form');\r\n    const submitBtn = form.querySelector('button.submit-form');\r\n    const statusInfoBlock = form.querySelector('p.form-msg');\r\n    const nameInput = form.querySelector('input#name');\r\n    const phoneInput = form.querySelector('input#phone');\r\n    const emailInput = form.querySelector('input#email');\r\n    const textInput = form.querySelector('#message');\r\n    const inputMsg = form.querySelector('p#input-msg');\r\n    const message = {\r\n        loading: themeUrl.loading,\r\n        success: themeUrl.success,\r\n        failure: themeUrl.failure\r\n    };\r\n\r\n    const clearInputs = () => {\r\n        form.reset();\r\n    };\r\n\r\n\r\n    nameInput.addEventListener('change', () => {\r\n        if (nameInput.classList.contains('error')) {\r\n            nameInput.classList.remove('error');\r\n            inputMsg.textContent = '';\r\n        }\r\n    });\r\n\r\n    emailInput.addEventListener('change', () => {\r\n        if (emailInput.classList.contains('error')) {\r\n            emailInput.classList.remove('error');\r\n            inputMsg.textContent = '';\r\n        }\r\n    });\r\n\r\n    phoneInput.addEventListener('change', () => {\r\n        if (phoneInput.classList.contains('error')) {\r\n            phoneInput.classList.remove('error');\r\n            inputMsg.textContent = '';\r\n        }\r\n    });\r\n\r\n    textInput.addEventListener('change', () => {\r\n        if (textInput.classList.contains('error')) {\r\n            textInput.classList.remove('error');\r\n            inputMsg.textContent = '';\r\n        }\r\n    });\r\n\r\n\r\n    function nameValue() {\r\n        if (Object(_check_name__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(nameInput, inputMsg)) {\r\n            return true;\r\n        } else {\r\n            return false;\r\n        }\r\n    }\r\n\r\n    function emailValue() {\r\n        if (Object(_check_email__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(emailInput, inputMsg)) {\r\n            return true;\r\n        } else {\r\n            return false;\r\n        }\r\n    }\r\n\r\n    function phoneValue() {\r\n        if (Object(_check_phone__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(phoneInput, inputMsg)) {\r\n            return true;\r\n        } else {\r\n            return false;\r\n        }\r\n    }\r\n\r\n\r\n    const validateForm = () => {\r\n\r\n        if (!nameValue()) {\r\n            return false;\r\n        }\r\n\r\n        if (!emailValue()) {\r\n            return false;\r\n        }\r\n\r\n        if (!phoneValue()) {\r\n            return false;\r\n        }\r\n\r\n        return true;\r\n    }\r\n\r\n    const postData = async (url, data) => {\r\n        statusInfoBlock.textContent = message.loading;\r\n        let res = await fetch(url, {\r\n            method: 'POST',\r\n            body: data,\r\n        });\r\n        return await res.text();\r\n    }\r\n\r\n    form.addEventListener('submit', (e) => {\r\n        e.preventDefault();\r\n        if (!validateForm()) {\r\n            return false;\r\n        }\r\n        ;\r\n        let formData = new FormData(form);\r\n\r\n        postData(themeUrl.themeUrl + '/includes/send-contact-form.php', formData)\r\n            .then((res) => {\r\n                window.dataLayer = window.dataLayer || [];\r\n                window.dataLayer.push({\r\n                    'event': 'form_contacts'\r\n                });\r\n                statusInfoBlock.textContent = message.success;\r\n            })\r\n            .catch(() => {\r\n                statusInfoBlock.textContent = message.failure;\r\n            })\r\n            .finally(() => {\r\n\r\n                clearInputs();\r\n                setTimeout(() => {\r\n                    statusInfoBlock.textContent = '';\r\n                }, 8000);\r\n            });\r\n    });\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (sendContactForm);\r\n\n\n//# sourceURL=webpack:///./js/modules/send-contact-form.js?");
+
+/***/ }),
+
+/***/ "./js/modules/validate-email.js":
+/*!**************************************!*\
+  !*** ./js/modules/validate-email.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst validateEmail = (value) => {\r\n    let regex = /^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/;\r\n    if (value.match(regex)) {\r\n        return true;\r\n    } else {\r\n        return false;\r\n    }\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (validateEmail);\r\n\n\n//# sourceURL=webpack:///./js/modules/validate-email.js?");
+
+/***/ }),
+
+/***/ "./js/modules/validate-phone.js":
+/*!**************************************!*\
+  !*** ./js/modules/validate-phone.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction validatePhoneNumber(value) {\r\n    let pattern = /^(\\+)?([ 0-9()-]){8,16}$/;\r\n    if (pattern.test(value)) {\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (validatePhoneNumber);\r\n\n\n//# sourceURL=webpack:///./js/modules/validate-phone.js?");
+
+/***/ }),
+
+/***/ "./js/modules/validate-text.js":
+/*!*************************************!*\
+  !*** ./js/modules/validate-text.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _has_number__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./has-number */ \"./js/modules/has-number.js\");\n\r\n\r\nfunction validateTextField(value) {\r\n    let containsNumber = Object(_has_number__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(value);\r\n    if (!containsNumber) {\r\n        return true;\r\n    }\r\n    return false;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (validateTextField);\r\n\r\n\n\n//# sourceURL=webpack:///./js/modules/validate-text.js?");
 
 /***/ }),
 

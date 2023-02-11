@@ -13,10 +13,22 @@ function webpack_files() {
     wp_enqueue_style('splide-css', get_theme_file_uri('css/splide.min.css'), array(), '4.1.4');
     wp_enqueue_style('beerslider-css', get_theme_file_uri('css/beerslider.css'), array(), '1');
     wp_localize_script( 'webpack-js', 'themeUrl',
-        array(
-            'themeUrl' => get_theme_file_uri()
-        )
-    );
+    array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce' => wp_create_nonce( 'wp-smart-sign-nonce' ),
+        'themeUrl' => get_theme_file_uri(),
+        'loading' => __('Siunčiami duomenys...', 'core'),
+        'success' => __('Jūsų užklausą gavome! Susisieksime su Jumis netrukus.', 'core'),
+        'failure' => __('Kažkas negerai, prašome bandyti vėliau', 'core'),
+        'name_empty' => __('Neužpildytas vardo laukelis', 'core'),
+        'name_error' => __('Neteisingai užpildytas vardo laukelis', 'core'),
+        'phone_empty' => __('Neužpildytas telefono laukelis', 'core'),
+        'phone_error' => __('Neteisingai užpildytas telefono laukelis', 'core'),
+        'mail_empty' => __('Neužpildytas el. pašto laukelis', 'core'),
+        'mail_error' => __('Neteisingai užpildytas el. pašto laukelis', 'core'),
+    )
+);
+
 }
 add_action('wp_enqueue_scripts', 'webpack_files');
 

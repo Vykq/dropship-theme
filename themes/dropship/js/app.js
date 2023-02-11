@@ -2,6 +2,7 @@ import Splide from './splide.min.js';
 import BeerSlider from './BeerSlider.js';
 import Accordion from './modules/accordion.js';
 import quantityBtns from './modules/quantitybtns';
+import sendContactForm from "./modules/send-contact-form";
 
 if (document.querySelector('section.slider')) {
     
@@ -63,6 +64,9 @@ if (document.querySelector('input[type="number"]')) {
   quantityBtns();
 }
 
+if (document.querySelector('.contact-form-block')) {
+  sendContactForm();
+}
 
 
  
